@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
+    <!-- Define your beans here -->
+    <bean id="myFortune" class="com.luv2code.springdemo.HappyFortuneService"/>
+    <bean id="myFortuneArray" class="com.luv2code.springdemo.ArrayOfFortunesService"/>
+    
+    <!-- basic SpingBean -->
+    <!--<bean id="myCoach" class="com.luv2code.springdemo.BaseballCoach"/>-->
+    <!--<bean id="myCoach" class="com.luv2code.springdemo.SwimmingCoach"/>-->
+    
+    <!-- SpingBean with constructor injection -->
+	<bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
+    	<!-- set up constructor injection --> 
+    	<constructor-arg ref="myFortune"/>
+    </bean>
+    
+    <!-- SpingBean with setter injection -->
+    <bean id="myCricketCoach" class="com.luv2code.springdemo.CricketCoach">
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune"/>
+    	   	
+    	<!-- inject literal values -->
+    	<property name="emailAddress" value="${foo.email}"/>
+    	<property name="team" value="${foo.team}"/>
+    	
+    	<!-- inject literal values - hard-coded -->
+    	<!--<property name="emailAddress" value="bob.cricket@luv2code.com"/>-->
+    	<!--<property name="team" value="Dragon Ball"/>-->
+    </bean>
+    
+    <bean id="mySwimCoach" class="com.luv2code.springdemo.SwimmingCoach">
+    	<constructor-arg ref="myFortuneArray"/>
+    </bean>
+    
+</beans>
+
+
+
+
+
