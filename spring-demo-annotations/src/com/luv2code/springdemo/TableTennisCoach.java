@@ -20,7 +20,7 @@ public class TableTennisCoach implements Coach {
 
 	@Override
 	public String getDailyWorkout() {
-		return "Ok " + team + " - Practice serves and slams. Any questions email " + email;
+		return team + " - Practice serves and slams. Any questions email " + email;
 	}
 
 	@Override
