@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component // will use the default bean id on "tennisCoach"
+@Component
 public class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
@@ -27,7 +27,7 @@ public class TennisCoach implements Coach {
 	}
 	
 	@Autowired
-	@Qualifier("randomFortuneService")
+	@Qualifier("happyFortuneService")
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
