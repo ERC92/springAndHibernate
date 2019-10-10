@@ -17,7 +17,7 @@ public class TableTennisCoach implements Coach {
 	private String team;
 	
 	@Autowired
-	@Qualifier("happyFortuneService")
+	@Qualifier("fileFortuneService")
 	private FortuneService fortuneService;
 
 	@Override
