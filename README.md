@@ -6,6 +6,9 @@ To turn on logging messages for Spring: http://www.luv2code.com/spring-xml-logs
 MVC Docs: https://www.luv2code.com/spring-mvc-docs
 MVC Views: https://www.luv2code.com/spring-mvc-views
 
+SpringInitializr: https://start.spring.io/
+SpringBoot: https://spring.io/projects/spring-boot
+
 Scopes of Spring Beans
 Scope			:	Description
 Singleton		:	Create a single shared instance of the bean. Default scope
