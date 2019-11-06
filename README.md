@@ -8,6 +8,10 @@ MVC Views: https://www.luv2code.com/spring-mvc-views
 
 SpringInitializr: https://start.spring.io/
 SpringBoot: https://spring.io/projects/spring-boot
+			https://luv2code.com/spring-boot-starters
+			
+-> dev tools: https://www.luv2code.com/devtools-docs
+-> actuator endpoints: https://www.luv2code.com/actuator-endpoints
 
 Scopes of Spring Beans
 Scope			:	Description

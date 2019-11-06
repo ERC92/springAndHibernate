@@ -11,3 +11,7 @@ public class MycoolappApplication {
 	}
 
 }
+
+// Component scanning is recursive, common to have main in level above the rest of the code
+// if work is split across multiple packages with different names, need to explicitly list 
+// base packages e.g. @SpringBootApplication(scanBasePackages={"package1","package2",..})
