@@ -12,6 +12,7 @@ SpringBoot: https://spring.io/projects/spring-boot
 			
 -> dev tools: https://www.luv2code.com/devtools-docs
 -> actuator endpoints: https://www.luv2code.com/actuator-endpoints
+-> Common Properties: https://www.luv2code.com/spring-boot-props
 
 Scopes of Spring Beans
 Scope			:	Description
