@@ -15,6 +15,10 @@ SpringBoot: https://spring.io/projects/spring-boot
 -> Common Properties: https://www.luv2code.com/spring-boot-props
 -> JPA Query Language: https://www.luv2code.com/jpql
 
+Spring Data Rest: https://spring.io/projects/spring-data-rest
+
+Thymeleaf: https://www.thymeleaf.org
+
 Scopes of Spring Beans
 Scope			:	Description
 Singleton		:	Create a single shared instance of the bean. Default scope
@@ -22,4 +26,7 @@ Prototype		:	Creates a new bean instance for each container request
 Request			:	Scoped to an HTTP web request. Only used for web apps
 Session			:	Scoped to an HTTP web session. Only used for web apps
 Global-session	:	Scoped to a global HTTP web session. Only used for web apps
+
+
+Thymeleaf project: error with Spring context, run mvnw dependency:purge-local-repository -DreResolve=true from project location in command prompt
 
